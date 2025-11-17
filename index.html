@@ -201,7 +201,7 @@
     <!-- --------------Table booking secction-------------------- -->
     <div class="Res">
         <div class="me">
-            <h2>Book Table</h2>
+            <h2>Book A Table</h2>
         </div>
 
         <div class="cont">
@@ -210,37 +210,48 @@
                 Lunch | Dinner | Omakase
 
             </p>
-            <form action="#frm">
 
-                <div class="form" id="frm">
-                    <div class="nxt" id="dis">
 
-                        <div class="inp">
-                            <label for="cname"></label>
-                            <input type="text" id="cname" placeholder="Customer Name" required>
-                        </div>
-                        <div class="inp">
-                            <label for="ttim"></label>
-                            <select name="ttim" id="" required>
-                                <option value="">Select</option>
-                                <option value="morning">Morning</option>
-                                <option value="evening">Evening</option>
-                            </select>
-                        </div>
-                        <div class="inp">
-                            <label for="dd"></label>
-                            <input type="date" name="dd" id="" required>
-                        </div>
-                        <div class="inp"><input type="submit" onsubmit="display()"
-                                style="cursor: pointer; color:white; background-color: #83a61d;" value="Book Now"></div>
-                        <div class="inp"><input type="reset" value="Cancel"></div>
-                    </div>
+            <div class="fl">
 
-                    <div class="mess" id="mess" style="display:none;">
-                        <h1>Thanks for Booking</h1>
-                    </div>
+
+                <div class="im">
+                    <img src="Images/chef/left_side.png" id="Bh" style="width:25rem; height:30rem;" alt="">
                 </div>
-            </form>
+                <form onsubmit="change(); return false;" id="frm">
+
+                    <div class="form">
+                        <div class="nxt" id="dis">
+
+                            <div class="inp">
+                                <label for="cname"></label>
+                                <input type="text" id="cname" placeholder="Customer Name" required>
+                            </div>
+                            <div class="inp">
+                                <label for="ttim"></label>
+                                <select name="ttim" id="" required>
+                                    <option value="">Select</option>
+                                    <option value="morning">Morning</option>
+                                    <option value="evening">Evening</option>
+                                </select>
+                            </div>
+                            <div class="inp">
+                                <label for="dd"></label>
+                                <input type="date" name="dd" id="" required>
+                            </div>
+                            <div class="inp"><input type="submit"
+                                    style="cursor: pointer; color:white; background-color: #83a61d;" value="Book Now">
+                            </div>
+                            <div class="inp"><input type="reset" style="cursor: pointer;" value="Cancel"></div>
+                        </div>
+
+                    </div>
+                </form>
+                <div class="mess">
+                    <p id="msg" style="font-size:20px; color:green; display:none;"></p>
+
+                </div>
+            </div>
         </div>
     </div>
 
@@ -250,17 +261,17 @@
             <h2>Chef Introduction</h2>
         </div>
 
-        <div class="cont">
-
-            <p>Chef Hiro Takeda brings over 15 years of Japanese culinary mastery, trained in Tokyo’s finest sushi
-                kitchens—his philosophy: simple, seasonal, soulful.
-
-
-            </p>
+        <div class="cont_c">
             <div class="images_2">
                 <div class="img_ch"><img src="Images/chef/chef1.png" alt=""></div>
 
 
+            </div>
+
+            <div class="con1">
+
+                <p>Chef Hiro Takeda brings over 15 years of Japanese culinary mastery, trained in Tokyo’s finest sushi
+                    kitchens—his philosophy: simple, seasonal, soulful.</p>
             </div>
         </div>
     </div>
@@ -274,28 +285,52 @@
         <div class="cont">
 
             <div class="cut1">
-                <div class="cut_im"><img src="" alt=""></div>
-                <div class="name">Ananya</div>
-                <div class="re"> “Best sushi experience ever. Everything melts in the mouth.”</div>
-                <div class="st">⭐️⭐️⭐️⭐️⭐️</div>
+                <div class="ct">
+                    <div class="cut_im"><img src="Images/revs/anaya.jpeg" alt=""></div>
+                    <div class="ct1">
+
+                        <div class="name"><b>Ananya(Singer)</b></div>
+                        <div class="st">⭐️⭐️⭐️⭐️⭐️</div>
+                    </div>
+
+                </div>
+                <div class="re">“Best sushi experience ever. Everything melts in the mouth.”</div>
             </div>
             <div class="cut1">
-                <div class="cut_im"><img src="" alt=""></div>
-                <div class="name">Rohan</div>
-                <div class="re"> “Authentic, elegant, and beautifully presented.”</div>
-                <div class="st">⭐️⭐️⭐️⭐️</div>
+                <div class="ct">
+
+                    <div class="cut_im"><img src="Images/revs/rohan.jpeg" alt=""></div>
+                    <div class="ct1">
+
+                        <div class="name"><b>Rohan(Actor)</b></div>
+                        <div class="st">⭐️⭐️⭐️⭐️⭐️</div>
+                    </div>
+                </div>
+                <div class="re">“Authentic, elegant, and beautifully presented.”</div>
             </div>
             <div class="cut1">
-                <div class="cut_im"><img src="" alt=""></div>
-                <div class="name">Varun</div>
+                <div class="ct">
+
+                    <div class="cut_im"><img src="Images/revs/varun.jpeg" alt=""></div>
+                    <div class="ct1">
+
+                        <div class="name"><b>Varun(Designer)</b></div>
+                        <div class="st">⭐️⭐️⭐️⭐️⭐️</div>
+                    </div>
+                </div>
                 <div class="re">Good Experience</div>
-                <div class="st">⭐️⭐️⭐️</div>
             </div>
             <div class="cut1">
-                <div class="cut_im"><img src="" alt=""></div>
-                <div class="name">Kriti</div>
+                <div class="ct">
+
+                    <div class="cut_im"><img src="Images/revs/kriti.jpeg" alt=""></div>
+                    <div class="ct1">
+
+                        <div class="name"><b>Kriti(Artist)</b></div>
+                        <div class="st">⭐️⭐️⭐️⭐️⭐️</div>
+                    </div>
+                </div>
                 <div class="re">Nice interior</div>
-                <div class="st">⭐️⭐️⭐️⭐️</div>
             </div>
 
 
@@ -312,10 +347,10 @@
         <div class="cont">
 
             <div class="images">
-                <div class="img"><img src="" alt=""></div>
-                Google Map
-                <div class="img"><img src="" alt=""></div>
-                Exterior
+                <div class="img"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31103.858845376115!2d77.61756891450727!3d12.972980257309139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a418770391%3A0xb50f46b826501036!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1763391057211!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
             </div>
 
@@ -341,7 +376,7 @@
         </div>
 
         <div class="google_map">
-            <p> 🗺 Google Map Embedded</p>
+            <p> 🗺 <a href="https://maps.app.goo.gl/BuRMiHE9U1TXmSHk6">https://maps.app.goo.gl/BuRMiHE9U1TXmSHk6</a></p>
         </div>
 
     </div>
@@ -350,15 +385,16 @@
 <script>
 
 
-     dis=document.getElementById('dis')
-     mess=document.getElementById('mess')
+    function change() {
 
-    function display() {
-
-        dis.style.display="none"
-        mess.style.display="block"
+        document.getElementById('Bh').src = "Images/chef/hand_.png";
+        document.getElementById('frm').style.display = "none";
+        document.getElementById("msg").innerText = "Thanks, your booking is confirmed!";
+        document.getElementById("msg").style.display = "block";
 
     }
+
+
 </script>
 
 </html>
