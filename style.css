@@ -250,7 +250,7 @@ body {
 
 .text {
     margin-bottom: 2rem;
-    border:.1rem solid black;
+    /* border:.1rem solid black; */
     position: absolute;
     top:50%;
     text-align: center;
@@ -261,7 +261,15 @@ body {
 
 .text h2 {
     margin-bottom: 1rem;
+    font-size:3.5rem;
+    font-weight: bolder;
 
+}
+
+.text h3
+{
+    font-size:1.2rem;
+    color:#83a61d;
 }
 
 
