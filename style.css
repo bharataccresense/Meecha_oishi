@@ -45,7 +45,7 @@ body {
     margin-right: 1.5rem;
     padding: 1.2rem;
 
-    
+
 }
 
 /* .hero_section */
@@ -157,41 +157,149 @@ body {
 }
 
 /* About Section Styles */
-.about-title {
-    font-size: 2.25rem;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 1.875rem;
-    /* 30px */
-    color: #83a61d;
-    letter-spacing: 0.125rem;
-    /* 2px */
+.about-section {
+
+
+
+    font-family: "Inter", sans-serif;
 }
 
+.about-title {
+    font-size: 2.4rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 3rem;
+    color: #83a61d;
+}
+
+/* About Grid */
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1.875rem;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
 }
 
-.about-image {
+.about-image img {
     width: 100%;
     border-radius: 1rem;
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
-    /* 4px 12px */
-}
-
-.about-text {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    /* border:.1rem solid black; */
-    text-align: justify;
-    color: #333;
 }
 
 .about-text p {
-    margin-bottom: 0.9375rem;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+
+
+/* INGREDIENTS SECTION */
+.ingredients-section {
+    margin-top: 4rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 2rem;
+}
+
+.section-desc {
+    max-width: 40rem;
+    margin: 0 auto 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Ingredient Rows */
+.ingredients-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.ing-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.ing-row.reverse {
+    direction: rtl;
+}
+
+.ing-row.reverse .ing-text {
+    direction: ltr;
+}
+
+.ing-text .ing-name {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    color: #83a61d;
+    margin-bottom: 0.5rem;
+}
+
+.ing-text .ing-desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.ing-img img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+
+
+/* CHEF SECTION */
+.chef-section {
+    margin-top: 4rem;
+}
+
+.chef-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.chef-img img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.chef-text p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+
+
+/* BRAND STORY */
+.brand-story {
+    margin-top: 4rem;
+    /* border:.1rem solid black; */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.brand-story p {
+    font-size: 1.2rem;
+    max-width: 45rem;
+    margin: 0 auto 1.5rem;
+    color: #444;
+}
+
+.brand-story img {
+    width: 10rem;
+    opacity: 0.9;
 }
 
 .me {
@@ -201,13 +309,7 @@ body {
 }
 
 /* ingridients section */
-.ing .me h2,
-.ch .me h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin: 2.5rem 0 1.5rem;
-    color: #83a61d;
-}
+
 
 .cont p {
     font-size: 1.125rem;
@@ -223,41 +325,11 @@ body {
     margin-top: 1rem;
 }
 
-.one,
-.two,
-.three {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-}
 
-.ing-text-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-
-    margin-bottom: 0.5rem;
-    text-align: center;
-    font-family: "Poppins", "Noto Sans JP", sans-serif;
-}
-
-.ing-text-desc {
-    font-size: 1rem;
-    line-height: 1;
-    /* border:.1rem solid black; */
-    margin: .4rem;
-    padding: .2rem 0;
-    text-align: justify;
-    color: #444;
-    text-align: center;
-    font-family: "Poppins", "Noto Sans JP", sans-serif;
-}
 
 .img_ing {
     background: #f5f5f5;
-     border: .1rem solid black;
+    border: .1rem solid black;
     width: 15rem;
     height: 15rem;
     border-radius: 0.75rem;
@@ -288,11 +360,6 @@ body {
     align-items: center;
 }
 
-.img_ch img {
-    width: 100%;
-    border-radius: 1rem;
-    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
-}
 
 .con1 {
     /* border:.1rem solid black; */
@@ -304,22 +371,6 @@ body {
     font-size: 1.125rem;
     color: #333;
     line-height: 1.7;
-}
-
-
-.lo_st {
-    display: flex;
-    /* border:.1rem solid black; */
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 5rem;
-
-}
-
-.imh img {
-    /* border:.1rem solid black; */
-    width: 15rem;
-    height: 15rem;
 }
 
 
@@ -395,6 +446,35 @@ body {
     box-shadow: 0 1rem 1.6rem rgba(0, 0, 0, 0.15);
 }
 
+
+.fixed-back {
+
+    /* border:.1rem solid black; */
+    margin-bottom: 10rem;
+    height: 100%;
+}
+
+.img-div,.img-div1
+{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+    
+}
+
+.img-div
+{
+    background-image:url('Images/photo_gallery/restaurent_interior.jpeg');
+
+}
+
+.img-div1
+{
+    background-image:url('Images/photo_gallery/exterior.jpeg');
+}
 
 /* signature section */
 .sig-section {
@@ -528,66 +608,173 @@ body {
 
 /* table booking section */
 
+.Res {
+
+    text-align: center;
+}
+
+.me h2 {
+    font-size: 2.5rem;
+    color: #83a61d;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.cont p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
 .fl {
     display: flex;
     justify-content: center;
-
-    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
+
 .form {
-    justify-self: center;
-    border: .1rem solid black;
-    border-radius: .4rem;
+    background: #ffffff;
+    border: .1rem solid #d9d9d9;
+    border-radius: 1rem;
     width: 25rem;
     padding: 2rem;
-    margin-top: 1rem;
-    height: 25rem;
+    height: auto;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease-in-out;
+}
 
+.form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.12);
 }
 
 .inp input,
 .inp select {
-    /* border:.1rem solid black; */
     width: 100%;
-    height: 3rem;
+    height: 3.2rem;
     border-radius: .8rem;
     border: .1rem solid #83a61d;
-    margin-bottom: 1rem;
-    padding-right: 1rem;
+    margin-bottom: 1.2rem;
     padding-left: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    transition: .3s;
+}
 
+.inp input:focus,
+.inp select:focus {
+    outline: none;
+    border-color: #5e7d15;
+    box-shadow: 0 0 5px rgba(131, 166, 29, 0.5);
+}
+
+.btn_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.btn {
+    width: 100%;
+    height: 3.2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: none;
+    transition: .3s ease;
+}
+
+.submit_btn {
+    background: #83a61d;
+    color: white;
+}
+
+.submit_btn:hover {
+    background: #6c8b17;
+}
+
+.cancel_btn {
+    background: #e6e6e6;
+}
+
+.cancel_btn:hover {
+    background: #cfcfcf;
+}
+
+.success_msg {
+    font-size: 1.2rem;
+    color: green;
+    margin-top: 1rem;
+    display: none;
 }
 
 /* customer reviews section */
 
-.cut_im img {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    margin-right: .5rem;
+
+.me h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #83a61d;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.cont {
+    max-width: 700px;
+    margin: auto;
+}
+
+.cut1 {
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border: .1rem solid #e4e4e4;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    transition: .3s ease-in-out;
+}
+
+.cut1:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
 }
 
 .ct {
     display: flex;
-    align-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
-.cut1 {
-    border: .1rem solid black;
-    margin-top: 1rem;
-    padding-left: .5rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    display: flex;
-    margin-bottom: 1rem;
-    background-color: #bcb8b8;
+.cut_im img {
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #83a61d;
+    box-shadow: 0 0 8px rgba(131, 166, 29, .4);
+}
 
+.name {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.st {
+    color: #f5b400;
+    font-size: 1.2rem;
 }
 
 .re {
-    margin-left: 2rem;
-
+    font-size: 1rem;
+    color: #555;
+    padding-left: .2rem;
+    margin-top: -.5rem;
+    line-height: 1.4rem;
 }
 
 
@@ -705,10 +892,35 @@ body {
     text-decoration: underline;
 }
 
+#scrollTopBtn {
+    position: fixed;
+    bottom: 2rem;           
+    right: 2rem;            
+    background-color: #83a61d;
+    color: white;
+    border: none;
+    width:4rem;
+    height:4rem;   
+    border-radius: 50%;
+    font-size: 1.8rem;      
+    cursor: pointer;
+    display:none;
+    box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.3);
+    transition: 0.3s ease-in-out;
+    z-index: 999;
+}
+
+#scrollTopBtn:hover {
+    background-color: #6c8a16;
+    transform: scale(1.1);
+}
+
+
 
 /* misl */
 
 .menu-section,
+.ingredients-section,
 .blog-section,
 .gallery,
 .sig-section,
