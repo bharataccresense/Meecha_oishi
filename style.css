@@ -79,6 +79,42 @@ body {
     color:#83a61d;
 }
 
+.hamburger {
+    display: none;
+    font-size: 2rem;       /* 32px */
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* ===== MOBILE SIDEBAR ===== */
+.mobile_sidebar {
+    position: fixed;
+    top: 0;
+    left: -17rem;          /* hide sidebar */
+    width: 15rem;          /* 240px */
+    height: 100vh;
+    background: #111;
+    padding: 5rem 2rem;    /* 80px 32px */
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.mobile_sidebar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+/* Slide-in when active */
+.mobile_sidebar.active {
+    left: 0;
+}
+
+/* ===== RESPONSIVE ===== */
 
 
 /* .hero_section */
@@ -1350,10 +1386,20 @@ background: #fafafa;
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   
     html{
         font-size:70%;
+    }
+
+       /* Hide navbar links */
+    .nav_button a {
+        display: none;
+    }
+
+    /* Show hamburger */
+    .hamburger {
+        display: block;
     }
     
     .cont-m,.about-grid,.chef-grid
