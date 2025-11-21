@@ -1,6 +1,8 @@
 <html>
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,14 +17,14 @@
 
         <div class="nav">
             <div class="logo">
-                <img src="Images/logo.png" alt="">
+                <img src="Images/log1.png" alt="">
             </div>
-            <div class="nav_button">
-                <div> <a href="#">Home</a>
-                    <a href="#menu">Menu</a>
-                    <a href="#abus">About Us</a>
-                    <a href="#bat">Book Table</a>
-                </div>
+            <div class="nav_button" id="navbar">
+                <a href="#" class="active">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#abus">About Us</a>
+                <a href="#bat">Book Table</a>
+
 
             </div>
         </div>
@@ -57,10 +59,10 @@
 
             <div class="menu-card">
                 <h2 class="menu-title">🍣 Sushi Rolls</h2>
-                <div class="menu-item"><span>California Roll</span><span>₹299</span></div>
-                <div class="menu-item"><span>Spicy Tuna Roll</span><span>₹349</span></div>
+                <div class="menu-item"><span>California Roll</span><span>₹499</span></div>
+                <div class="menu-item"><span>Spicy Tuna Roll</span><span>₹549</span></div>
                 <div class="menu-item"><span>Dragon Roll</span><span>₹399</span></div>
-                <div class="menu-item"><span>Veg Futomaki</span><span>₹249</span></div>
+                <div class="menu-item"><span>Veg Futomaki</span><span>₹349</span></div>
             </div>
 
 
@@ -68,7 +70,7 @@
                 <h2 class="menu-title">🍜 Ramen</h2>
                 <div class="menu-item"><span>Tonkotsu Ramen</span><span>₹499</span></div>
                 <div class="menu-item"><span>Shoyu Ramen</span><span>₹449</span></div>
-                <div class="menu-item"><span>Spicy Miso Ramen</span><span>₹479</span></div>
+                <div class="menu-item"><span>Spicy Miso Ramen</span><span>₹579</span></div>
                 <div class="menu-item"><span>Veg Garlic Ramen</span><span>₹399</span></div>
             </div>
 
@@ -83,9 +85,9 @@
 
             <div class="menu-card">
                 <h2 class="menu-title">🍤 Appetizers</h2>
-                <div class="menu-item"><span>Tempura Prawns</span><span>₹349</span></div>
-                <div class="menu-item"><span>Chicken Karaage</span><span>₹329</span></div>
-                <div class="menu-item"><span>Gyoza Dumplings</span><span>₹289</span></div>
+                <div class="menu-item"><span>Tempura Prawns</span><span>₹549</span></div>
+                <div class="menu-item"><span>Chicken Karaage</span><span>₹429</span></div>
+                <div class="menu-item"><span>Gyoza Dumplings</span><span>₹389</span></div>
             </div>
 
 
@@ -99,9 +101,9 @@
 
             <div class="menu-card">
                 <h2 class="menu-title">🍡 Desserts</h2>
-                <div class="menu-item"><span>Mochi Ice Cream</span><span>₹199</span></div>
-                <div class="menu-item"><span>Matcha Cheesecake</span><span>₹249</span></div>
-                <div class="menu-item"><span>Dorayaki Pancake</span><span>₹179</span></div>
+                <div class="menu-item"><span>Mochi Ice Cream</span><span>₹399</span></div>
+                <div class="menu-item"><span>Matcha Cheesecake</span><span>₹449</span></div>
+                <div class="menu-item"><span>Dorayaki Pancake</span><span>₹379</span></div>
             </div>
 
 
@@ -111,7 +113,6 @@
     <section id="abus" class="about-section">
 
         <!-- ABOUT MAIN -->
-        <h2 class="about-title">About Meecha Oishi Sushi Café</h2>
 
         <div class="about-grid">
             <div class="about-image">
@@ -119,13 +120,18 @@
             </div>
 
             <div class="about-text">
+                <h2 class="about-title">About</h2>
                 <p>
-                    Welcome to <strong>Meecha Oishi Sushi Café</strong> — where authentic Japanese cooking meets modern
-                    comfort. Our café is inspired by warm Tokyo aesthetics, featuring soft lighting, wooden textures,
-                    and a peaceful ambience perfect for relaxed dining.
+                    Meecha Oishi's mission is to bring Japanese soul food to your doorstep and transport you to downtown
+                    Tokyo.
+                    Chef Hiro Takeda, the founder and owner of Meecha Oishi, trained under many teachers in the Tokyo's
+                    elite sushi academies prefecture
+                    before moving to the India.
                 </p>
 
-                <p>
+                <button class="rms">READ MORE</button>
+
+                <!-- <p>
                     From hand-rolled sushi to rich umami-filled ramen bowls, every dish is crafted with premium
                     ingredients,
                     traditional methods, and a deep respect for Japanese culinary culture.
@@ -134,80 +140,94 @@
                 <p>
                     Whether you're here for a cozy meal, a new food experience, or simply to enjoy our Japanese-inspired
                     atmosphere — Meecha Oishi promises a memorable and flavour-rich journey.
-                </p>
+                </p> -->
             </div>
         </div>
 
-
-
-
-
-
-
-        <!-- CHEF -->
-        <div class="chef-section">
-            <h2 class="section-title">Chef Introduction</h2>
-
-            <div class="chef-grid">
-
-                <div class="chef-img">
-                    <img src="Images/chef/chef1.png" alt="Chef Hiro">
-                </div>
-
-                <div class="chef-text">
-                    <p>
-                        <strong>Chef Hiro Takeda</strong>, born in Osaka, brings more than 15 years of Japanese culinary
-                        mastery
-                        to Meecha Oishi. Trained in Tokyo's elite sushi academies, he specializes in Edomae sushi,
-                        sashimi
-                        precision, dashi preparation, and the Japanese “Shun” (seasonal) philosophy.
-                    </p>
-
-                    <p>
-                        His journey includes working at award-winning sushi bars in Shibuya, ramen kitchens in Kyoto,
-                        and
-                        premium Omakase counters in Ginza.
-                    </p>
-
-                    <p>
-                        Guided by his philosophy — <strong>“Respect the ingredient. Honour the season. Cook with
-                            heart.”</strong> —
-                        Chef Hiro personally oversees ingredient selection and menu design, ensuring every dish carries
-                        authentic Japanese soul.
-                    </p>
-                </div>
-            </div>
-        </div>
     </section>
+
+
+
+
+
+
+    <!-- CHEF -->
+    <div class="chef-section">
+
+        <div class="chef-grid">
+
+            <div class="chef-img">
+                <img src="Images/chef/chef1.png" alt="Chef Hiro">
+            </div>
+
+            <div class="chef-text">
+                <h2 class="section-title">Our Chef</h2>
+                <p>
+                    <strong>Chef Hiro Takeda</strong>, born in Osaka, brings more than 15 years of Japanese culinary
+                    mastery
+                    to Meecha Oishi. Trained in Tokyo's elite sushi academies, he specializes in Edomae sushi,
+                    sashimi
+                    precision, dashi preparation, and the Japanese “Shun” (seasonal) philosophy.
+                </p>
+                <p>
+                    His journey includes working at award-winning sushi bars in Shibuya, ramen kitchens in Kyoto,
+                    and
+                    premium Omakase counters in Ginza.
+                </p>
+
+                <div class="im-s">
+                    <img src="Images/chef/signature.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
     <!-- -------------------- fixed background ------------------- -->
 
     <section class="fixed-back">
 
-        <div class="img-div"></div>
+        <div class="img-div">
+            <div class="img-text">
+
+                <h2> A space where the heart of Japan comes alive.</h2>
+                <h2>「日本の心が息づく空間へ。」</h2>
+                <!-- <h2>(Nihon no kokoro ga ikizuku kūkan e.)</h2> -->
+            </div>
+        </div>
 
     </section>
 
     <!-- ---------------------------- signature dishes ----------------- -->
 
-    <section id="signature-dishes" class="sig-section">
+    <section class="signature-section">
+        <div class="signature-bg">
+            <h2 class="signature-title">Our Signature Dishes</h2>
+            <p class="signature-sub">
+                “Crafted with soul, perfected with tradition — a plate full of Japan.”
+            </p>
+        </div>
+    </section>
 
+
+    <!-- <section id="signature-dishes" class="sig-section">
+        
         <div class="sig-heading">
             <h2>Signature Dishes</h2>
             <p>Experience the authentic taste of Japan with our chef's top-crafted specialties.</p>
         </div>
-        <div class="sig-grid">
-            <div class="sig-card">
+        <div class="sig-grid"> -->
+    <!-- <div class="sig-card">
                 <div class="sig-img">
                     <img src="Images/Signature_Dishes/sup4.png" alt="Signature Ramen">
                 </div>
                 <h3>Tokyo Shoyu Ramen</h3>
                 <p>A rich soy-based broth, slow-cooked for 12 hours, paired with handmade noodles and marinated chashu
                     pork.</p>
-            </div>
+            </div> -->
 
-
+    <!-- 
             <div class="sig-card">
                 <div class="sig-img">
                     <img src="Images/Signature_Dishes/Sushi de salmão Jhow em pauzinhos em um fundo preto Closeup _ Foto Premium.jpeg"
@@ -216,20 +236,20 @@
                 <h3>Chef's Omakase Sushi</h3>
                 <p>Premium cuts of fresh salmon, tuna, and yellowtail, prepared with traditional techniques for perfect
                     balance.</p>
-            </div>
+            </div> -->
 
 
-            <div class="sig-card">
+    <!-- <div class="sig-card">
                 <div class="sig-img">
                     <img src="Images/Signature_Dishes/sup3.png" alt="Tempura">
                 </div>
                 <h3>Golden Ebi Tempura</h3>
                 <p>Crispy, airy tempura shrimp served with umami-rich dipping sauce crafted from dashi and mirin.</p>
-            </div>
+            </div> -->
 
 
 
-            <div class="sig-card">
+    <!-- <div class="sig-card">
                 <div class="sig-img">
 
                     <img src="Images/Signature_Dishes/culture2.jpeg" alt="Chef's Special Ramen">
@@ -237,14 +257,14 @@
                 <h3>Chef's Special Ramen</h3>
                 <p>A soulful bowl featuring slow-cooked broth, hand-crafted noodles, and authentic
                     Japanese toppings.</p>
-            </div>
-        </div>
-    </section>
+            </div> -->
+    <!-- </div>
+    </section> -->
 
 
     <!-- --------------photo gallery secction-------------------- -->
 
-    <div class="gallery">
+    <!-- <div class="gallery">
         <div class="gal-heading">
             <h2>Gallery</h2>
             <h3>A Glimpse Into Our World</h3>
@@ -281,21 +301,31 @@
             <div class="gal-item"><img src="Images/Ingredients/matcha.jpeg" alt=""></div>
 
         </div>
-    </div>
+    </div> -->
 
 
 
 
     <!-- Japanese Cocktail Bar Section -->
-    <section id="cocktail-bar" class="cocktail-section">
-        <div class="cocktail-heading">
-            <h2>Japanese Cocktail Bar</h2>
-            <p>Experience handcrafted cocktails inspired by traditional Japanese flavors and modern mixology.</p>
+
+    <section class="cocktail-section">
+        <div class="cocktail-bg">
+            <h2 class="cocktail-title">Signature Japanese Cocktails</h2>
+            <p class="cocktail-sub">
+                “Where every sip balances harmony, craft, and quiet elegance.”
+            </p>
         </div>
+    </section>
 
-        <div class="cocktail-grid">
+    <!-- <section id="cocktail-bar" class="cocktail-section">
+            <div class="cocktail-heading">
+                <h2>Japanese Cocktail Bar</h2>
+                <p>Experience handcrafted cocktails inspired by traditional Japanese flavors and modern mixology.</p>
+            </div>
 
-            <div class="cocktail-card">
+        <div class="cocktail-grid"> -->
+
+    <!-- <div class="cocktail-card">
                 <img src="Images/japanese_cocktail/Japanese Yuzu Whiskey Sour.jpeg" alt="Yuzu Sour"
                     class="cocktail-img">
                 <h3>Yuzu Sour</h3>
@@ -314,9 +344,9 @@
                     alt="Umeshu Highball" class="cocktail-img">
                 <h3>Umeshu Highball</h3>
                 <p>Classic Japanese plum wine mixed with chilled soda for a smooth, sweet balance.</p>
-            </div>
+            </div> -->
 
-            <div class="cocktail-card">
+    <!-- <div class="cocktail-card">
                 <img src="Images/japanese_cocktail/blue logan.jpeg" alt="Okinawa Blue Lagoon" class="cocktail-img">
                 <h3>Okinawa Blue Lagoon</h3>
                 <p>A vibrant tropical mix of blue curaçao, pineapple juice, and shochu — inspired by Okinawa’s
@@ -325,16 +355,25 @@
 
 
         </div>
-    </section>
-
+    </section> -->
+    <!-- 
     <section class="fixed-back">
 
         <div class="img-div1"></div>
+        
+    </section> -->
 
+    <section class="ingredient-section">
+        <div class="ingredient-bg">
+            <h2 class="ingredient-title">Fresh Ingredients, Authentic Flavours</h2>
+            <p class="ingredient-sub">
+                We use only premium-grade produce sourced from the best farms & coasts.
+            </p>
+        </div>
     </section>
 
     <!-- INGREDIENTS -->
-    <div class="ingredients-section">
+    <!-- <div class="ingredients-section">
         <h2 class="section-title">Ingredients & Sourcing</h2>
 
         <p class="section-desc">
@@ -344,7 +383,7 @@
 
         <div class="ingredients-grid">
 
-            <!-- Matcha -->
+             Matcha
             <div class="ing-row">
                 <div class="ing-text">
                     <h3 class="ing-name">Matcha (抹茶)</h3>
@@ -358,7 +397,7 @@
                 </div>
             </div>
 
-            <!-- Miso -->
+            Miso 
             <div class="ing-row reverse">
                 <div class="ing-img">
                     <img src="Images/Ingredients/miso.jpeg" alt="Miso">
@@ -372,7 +411,7 @@
                 </div>
             </div>
 
-            <!-- Nori -->
+            Nori
             <div class="ing-row">
                 <div class="ing-text">
                     <h3 class="ing-name">Nori (海苔)</h3>
@@ -387,13 +426,13 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
 
 
     <!-- --------------Table booking secction-------------------- -->
     <div id="bat" class="Res">
         <div class="me">
-            <h2>Book A Table</h2>
+            <h2>Bookings</h2>
         </div>
 
         <div class="cont">
@@ -411,7 +450,13 @@
                         <div class="nxt" id="dis">
 
                             <div class="inp">
-                                <input type="text" id="cname" placeholder="Customer Name" required>
+                                <input type="text" id="cfname" placeholder="First Name" required>
+                            </div>
+                            <div class="inp">
+                                <input type="text" id="clname" placeholder="Last Name" required>
+                            </div>
+                            <div class="inp">
+                                <input type="email" id="clname" placeholder="Your email" required>
                             </div>
 
                             <div class="inp">
@@ -423,12 +468,12 @@
                             </div>
 
                             <div class="inp">
-                                <input type="date" name="dd" required>
+                                <input type="date" name="dd" id="bookingDate" required>
                             </div>
 
                             <div class="btn_row">
-                                <input type="submit" class="btn submit_btn" value="Book Now">
-                                <input type="reset" class="btn cancel_btn" value="Cancel">
+                                <input type="submit" class="btn submit_btn" value="SUBMIT">
+                                <!-- <input type="reset" class="btn cancel_btn" value="Cancel"> -->
                             </div>
 
                         </div>
@@ -446,10 +491,11 @@
     <!-- --------------reviews secction-------------------- -->
     <div class="Rev">
         <div class="me">
-            <h2>Customer Reviews</h2>
+            <h2>What they love about us!</h2>
         </div>
 
-        <div class="cont">
+        <div class="cont_" id="reviewSlider">
+
 
             <div class="cut1">
                 <div class="ct">
@@ -496,7 +542,18 @@
             </div>
 
         </div>
+
+
+
+        <!-- Dots -->
+        <div class="dots" id="dots">
+            <!-- <span></span>
+            <span></span>
+            <span></span>
+            <span></span> -->
+        </div>
     </div>
+
 
 
     <!-- Blog Section -->
@@ -551,16 +608,37 @@
 
     <!-- --------------location secction-------------------- -->
     <div class="Loc">
-        <div class="me">
-            <h2>Location</h2>
-        </div>
 
-        <div class="cont">
+        <div class="cont-m">
 
-            <div class="images">
+            <div class="con-txt">
+                <div class="me_l">
+                    <h2>CONTACTS</h2>
+                </div>
+                <div class="loca">
+                    <p>Indira Nagar</p>
+                    <p>Bengaluru</p>
+                    <p>India</p>
+                </div>
+                <div class="time">
+                    <p>Mon-Thu 11am-9pm</p>
+                    <p>Fri - Sun 11am-12am</p>
+                </div>
+
+                <div class="mob">
+                    <p>+918146803078</p>
+                </div>
+                <div class="social">
+                    <div class="ms"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="ms"><i class="fa-brands fa-facebook"></i></div>
+                    <div class="ms"><i class="fa-brands fa-twitter"></i></div>
+                </div>
+            </div>
+
+            <div class="images-l">
                 <div class="img"><iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31103.858845376115!2d77.61756891450727!3d12.972980257309139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a418770391%3A0xb50f46b826501036!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1763391057211!5m2!1sen!2sin"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
             </div>
@@ -570,83 +648,233 @@
 
     <!-- BRAND STORY / CLOSING -->
     <div class="brand-story">
-        <p>
-            At Meecha Oishi, we bring Japan's flavour, culture, and craftsmanship straight to your table.
-            From delicate sushi rolls to slow-cooked ramen broths — every dish reflects dedication to purity,
-            freshness, and tradition.
-        </p>
+        <div>
+            <h3>
+                Meecha Oishi: where India meets the
+            </h3>
+            <h3>seasonal Japanese cuisine.</h3>
+        </div>
 
-        <img src="Images/log1.png" alt="Meecha Oishi Logo">
+        <div><img src="Images/logo12.png" alt="Meecha Oishi Logo"></div>
     </div>
     <button id="scrollTopBtn">↑</button>
+
+    <!-- <div class="visitor-section">
+        <h2>Visitors</h2>
+        <div class="visitor-box">
+            <span id="visitorCount">0</span>
+            <p>Total Visitors</p>
+        </div>
+    </div> -->
+
     <!-- --------------footer secction-------------------- -->
     <footer class="footer">
+        <div class="foot-div">
+
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>📍 Indira Nagar, Bengaluru</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📞 <a href="tel:8146803078" style="color: white;">+91-8146803078</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Timings</h4>
+                <p>⏰ Mon-Thu 11 AM - 9 PM| Fri-Sun 11 AM - 12 AM</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Find Us</h4>
+                <p>🗺 <a href="https://maps.app.goo.gl/BuRMiHE9U1TXmSHk6" style="color: white;" target="_blank">Google
+                        Maps</a></p>
+            </div>
+        </div>
+
         <div class="footer-section">
-            <h4>Accresense Technology</h4>
+            <!-- <h4>Accresense Technology</h4> -->
             <p>Powered & Designed by Accresense Technology</p>
-        </div>
-
-        <div class="footer-section">
-            <h4>Location</h4>
-            <p>📍 Indira Nagar, Bengaluru</p>
-        </div>
-
-        <div class="footer-section">
-            <h4>Contact</h4>
-            <p>📞 <a href="tel:8146803078">+91-8146803078</a></p>
-        </div>
-
-        <div class="footer-section">
-            <h4>Timings</h4>
-            <p>⏰ 12 PM - 2 AM</p>
-        </div>
-
-        <div class="footer-section">
-            <h4>Find Us</h4>
-            <p>🗺 <a href="https://maps.app.goo.gl/BuRMiHE9U1TXmSHk6" target="_blank">Google Maps</a></p>
         </div>
     </footer>
 
+
+    <script>
+
+
+        function change() {
+
+            // document.getElementById('Bh').src = "Images/chef/hand_.png";
+            // document.getElementById('Bh').style.width = "25rem";
+            // document.getElementById('Bh').style.height = "30rem";
+            document.getElementById('frm').style.display = "none";
+            document.getElementById("msg").innerText = "Thanks, your booking is confirmed!";
+            document.getElementById("msg").style.display = "block";
+
+        }
+
+
+
+        let scrollBtn = document.getElementById("scrollTopBtn");
+
+        let homeSec = document.getElementById("home");
+        let menuSec = document.getElementById("menu");
+
+        window.addEventListener("scroll", function () {
+
+            let showPoint = homeSec.offsetHeight + menuSec.offsetHeight;
+
+            if (window.scrollY > showPoint) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        });
+
+        scrollBtn.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+
+
+        const dateInput = document.getElementById("bookingDate");
+
+        const today = new Date();
+
+
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+
+
+        const nextMonth = new Date();
+        nextMonth.setMonth(nextMonth.getMonth() + 1);
+
+
+        const format = (d) =>
+            d.toISOString().split("T")[0];
+
+        dateInput.min = format(tomorrow);
+        dateInput.max = format(nextMonth);
+
+        // let count = localStorage.getItem("visitCount");
+
+        // if (!count) {
+        //     count = 1;
+        // } else {
+        //     count = Number(count) + 1;
+        // }
+
+        // localStorage.setItem("visitCount", count);
+
+        // document.getElementById("visitorCount").textContent = count;
+
+
+        (function () {
+            const slider = document.getElementById("reviewSlider");
+            const slides = Array.from(document.querySelectorAll(".cut1"));
+            const dotsContainer = document.getElementById("dots");
+
+            if (!slider || slides.length === 0 || !dotsContainer) return;
+
+            let index = 0;
+            let autoInterval = 3000; // ms
+            let autoTimer = null;
+            let isUserInteracting = false;
+
+            // create dots
+            slides.forEach((_, i) => {
+                const dot = document.createElement("span");
+                if (i === 0) dot.classList.add("active");
+                dot.addEventListener("click", () => {
+                    index = i;
+                    goTo(index);
+                    resetAuto();
+                });
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = Array.from(dotsContainer.children);
+
+            // compute card width (visible width)
+            function cardWidth() {
+                return slider.clientWidth;
+            }
+
+            // go to slide index (0-based)
+            function goTo(i) {
+                const left = cardWidth() * i;
+                slider.scrollTo({ left, behavior: "smooth" });
+                updateDots(i);
+            }
+
+            // update dot visuals
+            function updateDots(i) {
+                dots.forEach(d => d.classList.remove("active"));
+                if (dots[i]) dots[i].classList.add("active");
+            }
+
+            // auto slide
+            function startAuto() {
+                stopAuto();
+                autoTimer = setInterval(() => {
+                    index = (index + 1) % slides.length;
+                    goTo(index);
+                }, autoInterval);
+            }
+            function stopAuto() {
+                if (autoTimer) {
+                    clearInterval(autoTimer);
+                    autoTimer = null;
+                }
+            }
+            function resetAuto() {
+                stopAuto();
+                startAuto();
+            }
+
+            // on manual scroll, update index & dots (debounced)
+            let scrollTimeout = null;
+            slider.addEventListener("scroll", () => {
+                // while user is scrolling, temporarily stop auto sliding
+                isUserInteracting = true;
+                stopAuto();
+
+                if (scrollTimeout) clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                    const pos = slider.scrollLeft;
+                    const w = cardWidth();
+                    // rounding to nearest index
+                    const newIndex = Math.round(pos / w);
+                    index = Math.min(Math.max(newIndex, 0), slides.length - 1);
+                    updateDots(index);
+                    // resume auto after short pause
+                    isUserInteracting = false;
+                    resetAuto();
+                }, 120); // 120ms after scroll stops
+            });
+
+            // handle window resize -> recalc positions
+            window.addEventListener("resize", () => {
+                // ensure slider aligns exactly to current index after resize
+                setTimeout(() => goTo(index), 120);
+            });
+
+            // start autoplay
+            startAuto();
+
+            // initial alignment (in case of CSS changes)
+            goTo(0);
+        })();
+
+
+
+
+
+    </script>
+
+
 </body>
 
-<script>
-
-
-    function change() {
-
-        document.getElementById('Bh').src = "Images/chef/hand_.png";
-        document.getElementById('Bh').style.width = "25rem";
-        document.getElementById('Bh').style.height = "30rem";
-        document.getElementById('frm').style.display = "none";
-        document.getElementById("msg").innerText = "Thanks, your booking is confirmed!";
-        document.getElementById("msg").style.display = "block";
-
-    }
-
-
-
-    let scrollBtn = document.getElementById("scrollTopBtn");
-
-    let homeSec = document.getElementById("home");
-    let menuSec = document.getElementById("menu");
-
-    window.addEventListener("scroll", function () {
-
-        let showPoint = homeSec.offsetHeight + menuSec.offsetHeight;
-
-        if (window.scrollY > showPoint) {
-            scrollBtn.style.display = "block";
-        } else {
-            scrollBtn.style.display = "none";
-        }
-    });
-
-    scrollBtn.addEventListener("click", function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-
-
-</script>
 
 </html>
