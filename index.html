@@ -29,11 +29,11 @@
             <div class="hamburger" id="openMenu">☰</div>
         </div>
         <div class="mobile_sidebar" id="sidebar">
-    <a href="#" class="active">Home</a>
-    <a href="#menu">Menu</a>
-    <a href="#abus">About Us</a>
-    <a href="#bat">Book Table</a>
-</div>
+            <a href="#" class="active">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#abus">About Us</a>
+            <a href="#bat">Book Table</a>
+        </div>
         <div class="hero_section">
         </div>
 
@@ -882,12 +882,48 @@
 
 
 
-const sidebar = document.getElementById("sidebar");
+       const sidebar = document.getElementById("sidebar");
 const openMenu = document.getElementById("openMenu");
+const html = document.documentElement;
+const body = document.body;
 
-openMenu.onclick = () => {
+// OPEN / CLOSE SIDEBAR
+openMenu.onclick = (e) => {
+    e.stopPropagation(); 
     sidebar.classList.toggle("active");
+
+    if (sidebar.classList.contains("active")) {
+        html.style.overflow = "hidden";
+        body.style.overflow = "hidden"; 
+    } else {
+        html.style.overflow = "auto";
+        body.style.overflow = "auto";
+    }
 };
+
+// CLOSE SIDEBAR WHEN CLICK OUTSIDE
+document.addEventListener("click", (e) => {
+    if (!sidebar.contains(e.target) && !openMenu.contains(e.target)) {
+        sidebar.classList.remove("active");
+        html.style.overflow = "auto";
+        body.style.overflow = "auto";
+    }
+});
+
+// CLOSE SIDEBAR ON NAV LINK CLICK
+const navLinks = document.querySelectorAll("#sidebar a");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+        html.style.overflow = "auto";
+        body.style.overflow = "auto";
+    });
+});
+
+
+
+
 
     </script>
 

@@ -29,9 +29,9 @@
 /* body section */
 
 html {
+    
     overflow-y: scroll;
     scroll-behavior: smooth;
-
 
 }
 
@@ -83,30 +83,44 @@ body {
     display: none;
     font-size: 2rem;       /* 32px */
     cursor: pointer;
-    margin-left: auto;
+    margin-right:.5rem;
+    /* border:.1rem solid black; */
+
 }
+
+
 
 /* ===== MOBILE SIDEBAR ===== */
 .mobile_sidebar {
     position: fixed;
-    top: 0;
-    left: -17rem;          /* hide sidebar */
-    width: 15rem;          /* 240px */
-    height: 100vh;
-    background: #111;
+    top:4rem;
+     left:-100%;          /*hide sidebar */
+    width:100%;
+    /* border:.1rem solid black;   */
+    /* height: 100vh; */
+    background: #ffff;
     padding: 5rem 2rem;    /* 80px 32px */
-    display: flex;
+    display:none;
+    /* align-items: flex-end; */
     flex-direction: column;
     transition: 0.3s ease-in-out;
     z-index: 1000;
 }
 
 .mobile_sidebar a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
+    font-size:1.5rem;
+    width:fit-content;
     margin: 1rem 0;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
+    /* border:.1rem solid black; */
     position: relative;
+}
+
+.mobile_sidebar a:hover
+{
+    text-decoration:underline;
 }
 
 /* Slide-in when active */
@@ -1388,9 +1402,9 @@ background: #fafafa;
 
 @media (max-width: 768px) {
   
-    html{
+    /* html{
         font-size:70%;
-    }
+    } */
 
        /* Hide navbar links */
     .nav_button a {
@@ -1402,6 +1416,10 @@ background: #fafafa;
         display: block;
     }
     
+    .mobile_sidebar
+    {
+        display:flex;
+    }
     .cont-m,.about-grid,.chef-grid
     {
         flex-direction: column;
