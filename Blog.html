@@ -2,6 +2,7 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs- Meecha oishi</title>
@@ -24,9 +25,9 @@
     </div>
     <div class="mobile_sidebar" id="sidebar">
         <a href="index.html#" class="active">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#abus">About Us</a>
-        <a href="#bat">Book Table</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#abus">About Us</a>
+        <a href="index.html#bat">Book Table</a>
     </div>
     <div id="home">
 
@@ -36,14 +37,15 @@
                 <h1>The Art of Sushi Making</h1>
             </div>
             <div class="blog1-cont">
+                <div class="blo-img">
+                    <img src="Images/Menu_page/sushi/sushi.jpeg" alt="Sushi Image">
+                </div>
                 <div class="blo-text">
                     <p> Sushi making is a beautiful balance of flavor, technique, and tradition.
                         Every piece of sushi reflects Japanese craftsmanship—where even the smallest
                         detail is treated with respect and precision.</p>
                 </div>
-                <div class="blo-img">
-                    <img src="/mnt/data/A_photograph_features_a_close-up_of_a_piece_of_sal.png" alt="Sushi Image">
-                </div>
+
             </div>
             <div class="blog1-cont">
                 <div class="blo-text">
@@ -54,11 +56,14 @@
                     </p>
                 </div>
                 <div class="blo-img">
-                    <img src="/mnt/data/A_photograph_showcases_matcha_tea_and_its_traditio.png" alt="Matcha">
+                    <img src="Images/Menu_page/sushi/nigiri sel.jpeg" alt="Matcha">
                 </div>
 
             </div>
             <div class="blog1-cont">
+                <div class="blo-img">
+                    <img src="Images/Menu_page/sushi/Classic Maki Rolls.jpeg" alt="Japanese Cocktail">
+                </div>
                 <div class="blo-text">
                     <p>
                         Sushi is more than food—it's an expression of culture, discipline, and art.
@@ -66,9 +71,7 @@
                         tells a story passed down through generations.
                     </p>
                 </div>
-                <div class="blo-img">
-                    <img src="/mnt/data/A_digital_photograph_features_a_blue_cocktail_in_a.png" alt="Japanese Cocktail">
-                </div>
+
 
             </div>
         </section>
@@ -80,6 +83,9 @@
             <h1>The Art of Ramen</h1>
         </div>
         <div class="blog1-cont">
+            <div class="blo-img">
+                <img src="Images/Menu_page/ramen/spicy miso ramen.jpeg" alt="Ramen Image">
+            </div>
             <div class="blo-text">
                 <p>
                     Ramen is one of Japan's most iconic dishes—an irresistible blend of rich broth,
@@ -87,9 +93,7 @@
                     and craftsmanship passed down through generations.
                 </p>
             </div>
-            <div class="blo-img">
-                <img src="/mnt/data/A_photograph_features_a_close-up_of_a_piece_of_sal.png" alt="Ramen Image">
-            </div>
+
         </div>
         <div class="blog1-cont">
             <div class="blo-text">
@@ -102,11 +106,14 @@
 
             </div>
             <div class="blo-img">
-                <img src="/mnt/data/A_digital_photograph_features_a_blue_cocktail_in_a.png" alt="Japanese drink">
+                <img src="Images/Menu_page/ramen/ramen.png" alt="Japanese drink">
             </div>
 
         </div>
         <div class="blog1-cont">
+            <div class="blo-img">
+                <img src="Images/Menu_page/ramen/Tonkotsu Ramen.jpeg" alt="Matcha">
+            </div>
             <div class="blo-text">
                 <p>
                     Whether enjoyed at a street stall, a specialty ramen bar, or at home,
@@ -114,9 +121,7 @@
                     It is more than food—it's an experience cherished worldwide.
                 </p>
             </div>
-            <div class="blo-img">
-                <img src="/mnt/data/A_photograph_showcases_matcha_tea_and_its_traditio.png" alt="Matcha">
-            </div>
+
 
         </div>
 
@@ -180,6 +185,49 @@
         scrollBtn.addEventListener("click", function () {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+
+
+
+        const sidebar = document.getElementById("sidebar");
+        const openMenu = document.getElementById("openMenu");
+        const html = document.documentElement;
+        const body = document.body;
+
+        // OPEN / CLOSE SIDEBAR
+        openMenu.onclick = (e) => {
+            e.stopPropagation();
+            sidebar.classList.toggle("active");
+
+            if (sidebar.classList.contains("active")) {
+                html.style.overflow = "hidden";
+                body.style.overflow = "hidden";
+            } else {
+                html.style.overflow = "auto";
+                body.style.overflow = "auto";
+            }
+        };
+
+        // CLOSE SIDEBAR WHEN CLICK OUTSIDE
+        document.addEventListener("click", (e) => {
+            if (!sidebar.contains(e.target) && !openMenu.contains(e.target)) {
+                sidebar.classList.remove("active");
+                html.style.overflow = "auto";
+                body.style.overflow = "auto";
+            }
+        });
+
+        // CLOSE SIDEBAR ON NAV LINK CLICK
+        const navLinks = document.querySelectorAll("#sidebar a");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                sidebar.classList.remove("active");
+                html.style.overflow = "auto";
+                body.style.overflow = "auto";
+            });
+        });
+
 
 
     </script>
