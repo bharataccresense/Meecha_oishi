@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs- Meecha oishi</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="logo">
+            <img src="Images/logo12.png" alt="">
+        </div>
+        <div class="nav_button" id="navbar">
+            <a href="index.html#" class="active">Home</a>
+            <a href="index.html#menu">Menu</a>
+            <a href="index.html#abus">About Us</a>
+            <a href="index.html#bat">Book Table</a>
+
+        </div>
+        <div class="hamburger" id="openMenu">☰</div>
+    </div>
+    <div class="mobile_sidebar" id="sidebar">
+        <a href="index.html#" class="active">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#abus">About Us</a>
+        <a href="#bat">Book Table</a>
+    </div>
+     <div id="home">
+
+         <section id="blog1" class="blo">
+            <div class="blog1-hedding">
+
+                <h1>Blog 1</h1>
+            </div> 
+            <div class="blog1-cont">
+                <div class="blo-text"></div>
+                <div class="blo-img"></div>
+            </div>
+            <div class="blog1-cont">
+                <div class="blo-text"></div>
+                <div class="blo-img"></div>
+                
+            </div>
+            <div class="blog1-cont">
+                <div class="blo-img"></div>
+                <div class="blo-text"></div>
+
+            </div>
+            </section>
+        </div>
+
+    <section id="blog2" class="blo">
+        <div class="blog1-hedding">
+
+                <h1>Blog 2</h1>
+            </div> 
+            <div class="blog1-cont">
+                <div class="blo-text"></div>
+                <div class="blo-img"></div>
+            </div>
+            <div class="blog1-cont">
+                <div class="blo-text"></div>
+                <div class="blo-img"></div>
+                
+            </div>
+            <div class="blog1-cont">
+                <div class="blo-img"></div>
+                <div class="blo-text"></div>
+
+            </div>
+
+    </section>
+
+    <button id="scrollTopBtn">↑</button>
+
+    <footer class="footer">
+        <div class="foot-div">
+
+            <div class="footer-section">
+                <h4>Location</h4>
+                <p>📍 Indiranagar, Bengaluru</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📞 <a href="tel:8146803078" style="color: white;">+91-8146803078</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Timings</h4>
+                <p>⏰ Mon-Thu 11 AM - 9 PM| Fri-Sun 11 AM - 12 AM</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Find Us</h4>
+                <p>🗺 <a href="https://maps.app.goo.gl/BuRMiHE9U1TXmSHk6" style="color: white;" target="_blank">Google
+                        Maps</a></p>
+            </div>
+        </div>
+        <div class="footer-section">
+            <!-- <h4>Accresense Technology</h4> -->
+            <p>Powered & Designed by Accresense Technology</p>
+        </div>
+    </footer>
+
+
+    <script>
+
+
+        
+
+
+        let scrollBtn = document.getElementById("scrollTopBtn");
+
+        let homeSec = document.getElementById("home");
+        // let menuSec = document.getElementById("menu");
+
+        window.addEventListener("scroll", function () {
+
+            let showPoint = homeSec.offsetHeight;
+
+            if (window.scrollY > showPoint) {
+                scrollBtn.style.display = "block";
+            } else {
+                scrollBtn.style.display = "none";
+            }
+        });
+
+        scrollBtn.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
