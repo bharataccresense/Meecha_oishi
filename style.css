@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif;
+     */
+    font-family: "Playfair Display", serif;
+
 }
 
 
@@ -193,7 +196,7 @@ body {
     font-size: 1.5rem;
     background-color: #83a61d;
     color: #ffff;
-    border-radius: .5rem;
+    /* border-radius: .5rem; */
 }
 
 .b1 button:hover {
@@ -221,7 +224,7 @@ body {
 .menu-card {
     background: #ffffff;
     padding: 1.25rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     transition: 0.3s ease;
 }
@@ -536,14 +539,14 @@ body {
     /* border:.1rem solid black; */
     margin-bottom: 1rem;
     /* height:fit-content; */
-    height: 100%;
+    height:50%;
 }
 
 .img-div,
 .img-div1 {
     width: 100%;
     /* height: 100%; */
-    height: 50%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -583,8 +586,9 @@ body {
 
 
 .arch-box {
-    /* border:.1rem solid black; */
-    width: 30%;
+    border:.1rem solid black;
+    width:50%;
+    
 
 }
 
@@ -829,7 +833,7 @@ body {
 /* Review Cards */
 .cut1 {
     background: #fff;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     /* margin-left:2rem; */
     /* border:.1rem solid black; */
     padding: 1.5rem;
@@ -925,6 +929,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     gap: 2rem;
 }
+
 
 .insta-grid {
     /* border: .1rem solid black; */
