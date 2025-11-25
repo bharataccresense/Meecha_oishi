@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, Helvetica, sans-serif;
+     */
+    font-family: "Playfair Display", serif;
+
+}
+
 /* BLOG MAIN HEADING */
 .blog1-hedding h1 {
     text-align: center;
