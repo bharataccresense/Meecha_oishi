@@ -295,7 +295,7 @@ body {
 
 .about-image {
     /* border:.1rem solid black; */
-    width: 40%;
+    width:30rem;
 
     /* height:100%; */
 
@@ -308,9 +308,10 @@ body {
 }
 
 .about-text {
+    margin-top:2rem;
 
     /* border:.1rem solid black; */
-    width: 30%;
+    width:25rem;
 }
 
 .about-text p {
@@ -320,7 +321,7 @@ body {
     margin-bottom: 1rem;
     color: #ffff;
     width: 100%;
-    /* text-align: justify; */
+    text-align: justify;
     /* width: 17rem; */
     /* border:.1rem solid white; */
 }
@@ -451,12 +452,10 @@ body {
     margin-top: 4rem;
     /* border: .1rem solid black; */
     /* background-image: url('Images/chef/myback.avif'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: #eee;
     height: 50%;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
     flex-direction: column;
     /* margin-bottom: 2rem; */
@@ -477,6 +476,7 @@ body {
 
 .brand-story img {
     width: 6rem;
+    margin-top:4rem;
 
     /* border: .1rem solid black; */
     /* opacity: 0.9; */
@@ -863,6 +863,7 @@ body {
 
 .name {
     font-size: 1.2rem;
+    margin-top:1.5rem;
     color: #333;
     width: fit-content;
 }
@@ -1059,8 +1060,10 @@ body {
     cursor: pointer;
 }
 
-.loca p {
-    font-size: 1.2rem;
+.loca p, .mob p,.time p {
+    font-size: 1.5rem;
+    border:.1rem solid;
+
 
 }
 
@@ -1076,15 +1079,15 @@ body {
 .images-l {
     
     /* border:.1rem solid black; */
-    width: 60%;
+    width:30rem;
 }
 
 .con-txt {
-    width: 40%;
+    width:30rem;
     /* height: 28rem; */
     
-    margin-top:2.5rem;
-    /* border:.1rem solid black; */
+    /* margin-top:2.5rem; */
+    border:.1rem solid black;
     padding: 1.5rem;
     padding-top: .1rem;
 }
@@ -1255,6 +1258,11 @@ body {
     align-items: center;
     flex-direction: column-reverse;
 
+}
+
+.con-txt
+{
+    margin-top:2.5rem;
 }
 
     .about-grid,.cont-m
