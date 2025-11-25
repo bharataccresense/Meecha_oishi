@@ -37,6 +37,7 @@
     background-image: url('Images/Hero_img/blog_hero.jpg');
     align-items: center;
     justify-content: center;
+    text-align: center;
     display: flex;
  
 }
