@@ -1024,6 +1024,12 @@ body {
     background: #708e13;
 }
 
+.Loc
+{
+    /* border:.1rem solid black; */
+    background-color: #83a61d;
+    /* color:#ffff; */
+}
 
 .cont-m {
     display: flex;
@@ -1034,33 +1040,24 @@ body {
 
 .loca,
 .time,
-.mob,
-.social {
+.mob {
     /* border:.1rem solid black; */
     margin-top: 3rem;
 }
 
-.social {
-    display: flex;
 
-}
 
-.ms i {
-    font-size: 1.5rem;
-    /* border: .1rem solid black; */
-    margin-right: 1rem;
-    cursor: pointer;
-}
 
 .loca p, .mob p,.time p {
     font-size: 1.5rem;
-    border:.1rem solid;
+    /* border:.1rem solid; */
 
 
 }
 
 .me_l {
     color: #333;
+    /* color:#fff; */
     /* border:.1rem solid; */
     /* margin-bottom:0; */
     font-size: 1.8rem;
@@ -1079,7 +1076,7 @@ body {
     /* height: 28rem; */
     
     /* margin-top:2.5rem; */
-    border:.1rem solid black;
+    /* border:.1rem solid black; */
     padding: 1.5rem;
     padding-top: .1rem;
 }

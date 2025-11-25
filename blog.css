@@ -29,7 +29,7 @@
 
 .text_b {
     margin-bottom: 2rem;
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
     width:100%;
     background-repeat: no-repeat;
@@ -45,7 +45,7 @@
 .text_b h2 {
     color: #333;
     margin-bottom: 1rem;
-    font-size: 12rem;
+    font-size: 3.5rem;
     /* font-weight: bolder; */
   
     
