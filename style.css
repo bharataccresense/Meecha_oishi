@@ -444,7 +444,7 @@ body {
     margin-top: 4rem;
     /* border: .1rem solid black; */
     /* background-image: url('Images/chef/myback.avif'); */
-    background-color: #eee;
+    /* background-color: #eee; */
     height:25rem;
     display: flex;
     justify-content:center;
@@ -1028,14 +1028,14 @@ body {
 {
     /* border:.1rem solid black; */
     background-color: #83a61d;
-    /* color:#ffff; */
+    color:#ffff;
 }
 
 .cont-m {
     display: flex;
     justify-content: space-between;
     /* border:.1rem solid black; */
-    flex: 0 0 100%;
+    /* flex: 0 0 100%; */
 }
 
 .loca,
@@ -1056,8 +1056,8 @@ body {
 }
 
 .me_l {
-    color: #333;
-    /* color:#fff; */
+    /* color: #333; */
+    color:#fff;
     /* border:.1rem solid; */
     /* margin-bottom:0; */
     font-size: 1.8rem;
@@ -1245,6 +1245,9 @@ body {
 .cont-m
 {
     align-items: center;
+    /* border:.1rem solid ; */
+    justify-content:center;
+    text-align: center;
     flex-direction: column-reverse;
 
 }
