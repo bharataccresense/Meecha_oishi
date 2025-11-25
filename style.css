@@ -453,7 +453,7 @@ body {
     /* border: .1rem solid black; */
     /* background-image: url('Images/chef/myback.avif'); */
     background-color: #eee;
-    height: 50%;
+    height:25rem;
     display: flex;
     justify-content:center;
     align-items: center;
