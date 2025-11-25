@@ -31,9 +31,9 @@
     margin-bottom: 2rem;
     /* background-position: center; */
     background-size: cover;
-    width:100%;
+    width:auto;
     background-repeat: no-repeat;
-    height: 100%;
+    height:100%;
     background-image: url('Images/Hero_img/blog_hero.jpg');
     align-items: center;
     justify-content: center;
