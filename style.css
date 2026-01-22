@@ -174,6 +174,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap:2rem;
     /* border:.1rem solid black; */
     margin-top:2rem;
     margin-bottom:6rem;
@@ -181,14 +182,12 @@ body {
 
 .b1 button {
     padding: 1rem;
-    margin-right: 1rem;
     border: .1rem solid #83a61d;
     width: 15rem;
     height: 5rem;
     font-size: 1.5rem;
     background-color: #83a61d;
     color: #ffff;
-    /* border-radius: .5rem; */
 }
 
 .b1 button:hover {
@@ -251,70 +250,57 @@ body {
 
 /* About Section Styles */
 .about-section {
-
-
-    /* border: .1rem solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5rem 0;
     background-color: #83a61d;
-    /* font-family: "Inter", sans-serif; */
-    padding-left: 2rem;
-    padding-right: 2rem;
+    
 }
 
 .about-title {
-    font-size: 2.4rem;
-    text-align: left;
-    /* font-family: "Poppins", sans-serif; */
-    margin-bottom: 1rem;
-    margin-top: 3rem;
+    font-size:2.4rem;
+    text-align:left;
+    margin-bottom:1rem;
     color: #ffff;
-    /* font-family: "Sawarabi Mincho", sans-serif; */
+    /* border:.1rem solid white; */
+    
 }
 
 /* About Grid */
 .about-grid {
     display: flex;
-    justify-content: space-around;
-    /* align-items: center; */
-    /* gap: 4rem; */
-    flex: 0 0 100%;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    gap: 4.2rem;
     /* border:.1rem solid white; */
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(32rem, 2fr));
-    border-radius: 1rem;
-    */
-    /* margin-bottom: 4rem; */
+
 }
 
 .about-image {
-    /* border:.1rem solid black; */
-    width:30rem;
-
-    /* height:100%; */
-
+    
+    width:28rem;
 }
 
 .about-image img {
     width: 100%;
     height: 100%;
-    /* border-radius: 1rem; */
+   
 }
 
 .about-text {
-    margin-top:2rem;
-
-    /* border:.1rem solid black; */
+   
     width:25rem;
 }
 
 .about-text p {
     font-size: 1.1rem;
-    /* font-family: "Poppins", sans-serif; */
     line-height: 1.7;
     margin-bottom: 1rem;
     color: #ffff;
     width: 100%;
     text-align: justify;
-    /* width: 17rem; */
     /* border:.1rem solid white; */
 }
 
@@ -334,46 +320,19 @@ body {
 }
 
 
-/* INGREDIENTS SECTION */
-/* .ingredients-section {
-    margin-top: 4rem;
-} */
-
-
-
-
-
-
-/* Title */
-
-
-/* Sub text */
-
-
-
-/* CHEF SECTION */
-/* .chef-section {
-    margin-top: 4rem;
-    margin-bottom:4rem;
-    border:.1rem solid black;
-    } */
 
 .chef-grid {
 
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
     /* border: .1rem solid black; */
-    flex: 0 0 100%;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 2rem; */
+    gap: 4.2rem;
 }
 
 .chef-img img {
     width: 22rem;
     /* border:.1rem solid black; */
-    /* border-radius: 1rem; */
 
 }
 
@@ -603,8 +562,9 @@ body {
     margin-bottom: 4rem;
     /* border:.1rem solid black; */
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
+    gap:4.2rem;
 }
 
 .cocktail-bg,
@@ -1026,16 +986,20 @@ body {
 
 .Loc
 {
-    /* border:.1rem solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:5rem 0;
     background-color: #83a61d;
     color:#ffff;
 }
 
 .cont-m {
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
+    width:100%;
     /* border:.1rem solid black; */
-    /* flex: 0 0 100%; */
+    gap:4.2rem;
 }
 
 .loca,
@@ -1051,17 +1015,16 @@ body {
 .loca p, .mob p,.time p {
     font-size: 1.5rem;
     /* border:.1rem solid; */
+    width:fit-content;
 
 
 }
 
 .me_l {
-    /* color: #333; */
     color:#fff;
     /* border:.1rem solid; */
-    /* margin-bottom:0; */
+    width:fit-content;
     font-size: 1.8rem;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 
 }
 
@@ -1071,15 +1034,19 @@ body {
     width:30rem;
 }
 
+
+
 .con-txt {
-    width:30rem;
-    /* height: 28rem; */
-    
-    /* margin-top:2.5rem; */
+    width:25rem;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
     /* border:.1rem solid black; */
     padding: 1.5rem;
     padding-top: .1rem;
 }
+
+
 
 /* footer section */
 
@@ -1226,9 +1193,10 @@ body {
 
 @media (max-width: 992px) {
     html {
-        font-size: 72%;
+        font-size: 73.4%;
     }
 }
+
 
 @media (max-width: 768px) {
     html {
