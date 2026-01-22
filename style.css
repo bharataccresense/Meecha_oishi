@@ -1248,8 +1248,14 @@ body {
     }
 }
 
+
+@media (max-width: 480px) {
+    html {
+        font-size: 39%;
+    }
+}
 @media (max-width: 400px) {
     html {
-        font-size: 50%;
+        font-size: 51%;
     }
 }
